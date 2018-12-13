@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Votacion Reaper</title>
+    <link rel="stylesheet" type="text/css" href="../styles/table.css">
+</head>
+
+<body class="container" background="../styles/img/back.png">
+    <h1>Votacion Blockchain Reaper</h1>
+    <br>
+    <br><br>
+    <div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Presentación</th>
+                <th>Candidato</th>
+                <th>Votos</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="../img/avatar0.jpg" class="avatar"></td>
+                    <td><a href="#" onclick="voteForCandidate('Reaper0')">Reaper0</a></td>
+                    <td id="candidate-1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="../img/avatar0.jpg" class="avatar"></td>
+                    <td><a href="#" onclick="voteForCandidate('Reaper1')">Reaper1</a></td>
+                    <td id="candidate-2"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="../img/avatar0.jpg" class="avatar"></td>
+                    <td><a href="#" onclick="voteForCandidate('Reaper2')">Reaper2</a></td>
+                    <td id="candidate-3"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="../server/index.js"></script>
+
+</html>
